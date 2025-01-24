@@ -343,7 +343,7 @@ namespace FreeTrain.Framework.Plugin.Generic
         /// <param name="e"></param>
         protected virtual void loadPrimitiveParams(XmlElement e)
         {
-            XmlNode xn = e.SelectSingleNode("structure");
+            XmlNode xn = XmlUtil.SelectSingleNode(e, "structure");
             if (xn != null)
                 categories = new StructCategories(xn, this.Id);
             else
@@ -357,7 +357,7 @@ namespace FreeTrain.Framework.Plugin.Generic
 
             try
             {
-                design = e.SelectSingleNode("design").InnerText;
+                design = XmlUtil.SelectSingleNode(e, "design").InnerText;
             }
             catch
             {
@@ -372,11 +372,11 @@ namespace FreeTrain.Framework.Plugin.Generic
             minHeight = 2;
             try
             {
-                maxHeight = int.Parse(e.SelectSingleNode("maxHeight").InnerText);
+                maxHeight = int.Parse(XmlUtil.SelectSingleNode(e, "maxHeight").InnerText);
                 try
                 {
                     // if minHeight is not defined, use default.
-                    minHeight = int.Parse(e.SelectSingleNode("minHeight").InnerText);
+                    minHeight = int.Parse(XmlUtil.SelectSingleNode(e, "minHeight").InnerText);
                 }
                 catch { }
             }
