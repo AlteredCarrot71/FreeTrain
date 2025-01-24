@@ -33,7 +33,7 @@
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <OutputPath>.\</OutputPath>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <DocumentationFile>FreeTrain.World.Rail.ColorTestTrain.xml</DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
