@@ -1,0 +1,937 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeTrain.World.Structs.HalfVoxelStructure</name>
+    </assembly>
+    <members>
+        <member name="T:FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference.placeSide">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference.PlaceSide">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference.frontface">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference.Frontface">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference.#ctor(FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution,System.Int32,System.Int32,FreeTrain.World.Direction,FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide)">
+            <summary>
+            
+            </summary>
+            <param name="hvc"></param>
+            <param name="color"></param>
+            <param name="hilight"></param>
+            <param name="front"></param>
+            <param name="side"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference.GetSprite">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference.GetHighlightSprite">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference.Height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference.Price">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference.Population">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.EmptyReference.#ctor(FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution,System.Int32,System.Int32,FreeTrain.World.Direction,FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide)">
+            <summary>
+            
+            </summary>
+            <param name="hvc"></param>
+            <param name="color"></param>
+            <param name="hilight"></param>
+            <param name="front"></param>
+            <param name="side"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.EmptyReference.GetSprite">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.EmptyReference.Height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.EmptyReference.Price">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.EmptyReference.Population">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.World.Structs.HalfVoxelStructure.HueShiftSpriteFactoryContributionImpl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HueShiftSpriteFactoryContributionImpl.#ctor(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HueShiftSpriteFactoryContributionImpl.CreateSpriteFactory(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTrain.World.Structs.HalfVoxelStructure.HSVColor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HSVColor._H">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HSVColor._S">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HSVColor._V">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HSVColor.Hue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HSVColor.Saturation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HSVColor.Brightness">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HSVColor.FromRGB(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="R"></param>
+            <param name="G"></param>
+            <param name="B"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HSVColor.#ctor">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HSVColor.#ctor(System.Drawing.Color)">
+            <summary>
+            
+            </summary>
+            <param name="src"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HSVColor.ToRGBColor">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTrain.World.Structs.HalfVoxelStructure.HalfDividedVoxel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfDividedVoxel.#ctor(FreeTrain.World.Structs.HalfVoxelStructure.HVStructure,FreeTrain.World.Location)">
+            <summary>
+            
+            </summary>
+            <param name="owner"></param>
+            <param name="loc"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfDividedVoxel.#ctor(FreeTrain.World.Structs.HalfVoxelStructure.HVStructure,FreeTrain.World.WorldLocator)">
+            <summary>
+            
+            </summary>
+            <param name="owner"></param>
+            <param name="wloc"></param>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HalfDividedVoxel.owner">
+            <summary>
+            The structure object to which this voxel belongs.
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HalfDividedVoxel.Entity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfDividedVoxel.OnClick">
+            <summary>
+            onClick event is delegated to the parent.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfDividedVoxel.Draw(FreeTrain.World.DrawContext,System.Drawing.Point,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="display"></param>
+            <param name="pt"></param>
+            <param name="heightCutDiff"></param>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HalfDividedVoxel.hasSpace">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfDividedVoxel.getReferences">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTrain.World.Structs.HalfVoxelStructure.SpriteSet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.SpriteSet.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="size"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.SpriteSet.#ctor(FreeTrain.World.Structs.HalfVoxelStructure.SpriteSet,System.Drawing.Color)">
+            <summary>
+            
+            </summary>
+            <param name="org"></param>
+            <param name="variation"></param>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.SpriteSet.Item(FreeTrain.World.Direction,FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide)">
+            <summary>
+            
+            </summary>
+            <param name="d"></param>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTrain.World.Structs.HalfVoxelStructure.ControllerForm">
+            <summary>
+            Controller that allows the user to
+            place/remove cars.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.ControllerForm.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.ControllerForm.loadContributions">
+            <summary>
+            Called to prepare array of contribution used for typeBox.DataSource
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.ControllerForm.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.ControllerForm.IsPlacing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.ControllerForm.UpdateSize(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.ControllerForm.UpdatePreview">
+            <summary>
+            Called when a selection of the structure has changed.
+            </summary>
+        </member>
+        <member name="T:FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide.Fore">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide.Back">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.World.Structs.HalfVoxelStructure.SideStored">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.SideStored.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.SideStored.Fore">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.SideStored.Back">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.SideStored.Both">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.hl_patterns">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.HighlightPatterns">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution._group">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.Group">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.offsets">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.Offsets">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.#ctor(System.Xml.XmlElement)">
+            <summary>
+            Parses a commercial structure contribution from a DOM node.
+            </summary>
+            <exception cref="T:System.Xml.XmlException">If the parsing fails</exception>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.LoadSprites(System.Xml.XmlElement,System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+            <param name="ep"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.LoadHighSprites(System.Xml.XmlElement,System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+            <param name="hle"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.GetOffset(FreeTrain.World.Direction,FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide)">
+            <summary>
+            
+            </summary>
+            <param name="d"></param>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.ParseSide(System.Xml.XmlNode)">
+            <summary>
+            
+            </summary>
+            <param name="n"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.ParseDirection(System.Xml.XmlNode)">
+            <summary>
+            
+            </summary>
+            <param name="n"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.GetHighlightPatternCount">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.GetSprite(FreeTrain.World.Direction,FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="d"></param>
+            <param name="s"></param>
+            <param name="col"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.GetHighLightSprite(FreeTrain.World.Direction,FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="d"></param>
+            <param name="s"></param>
+            <param name="col"></param>
+            <returns></returns>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.Price">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.PricePerArea">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.Height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.Subgroup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.colors">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.Colors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.variation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.Variation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution._currentCol">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.currentColor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution._currentHLIdx">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.currentHighlight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.GetGroup(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>]
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.CreateBuilder(FreeTrain.Controllers.IControllerSite)">
+            <summary>
+            
+            </summary>
+            <param name="site"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.CreateRemover(FreeTrain.Controllers.IControllerSite)">
+            <summary>
+            
+            </summary>
+            <param name="site"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.Create(FreeTrain.World.Location,FreeTrain.World.Direction,FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide)">
+            <summary>
+            
+            
+            </summary>
+            <param name="baseLoc"></param>
+            <param name="front"></param>
+            <param name="side"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.Destroy(FreeTrain.World.Location,FreeTrain.World.Direction,FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide)">
+            <summary>
+            
+            </summary>
+            <param name="baseLoc"></param>
+            <param name="front"></param>
+            <param name="side"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.CanBeBuilt(FreeTrain.World.Location)">
+            <summary>
+            
+            </summary>
+            <param name="baseLoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution.CreatePreview(System.Drawing.Size)">
+            <summary>
+            
+            </summary>
+            <param name="pixelSize"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTrain.World.Structs.HalfVoxelStructure.HueShiftSpriteFactory">
+            <summary>
+            SpriteFactory for ColorMappedSprite.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HueShiftSpriteFactory.#ctor(System.Xml.XmlElement)">
+            <summary>
+            Load a color map from the XML manifest of the format:
+            	&lt;map from="100,200, 50" to="50,30,20" />
+            	&lt;map from="  0, 10,100" to="..." />
+            	...
+            </summary>
+            <param name="e">
+            The parent of &lt;map> elements.
+            </param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HueShiftSpriteFactory.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="counts"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HueShiftSpriteFactory.CreateSprite(FreeTrain.Framework.Graphics.Picture,System.Drawing.Point,System.Drawing.Point,System.Drawing.Size)">
+            <summary>
+            
+            </summary>
+            <param name="picture"></param>
+            <param name="offset"></param>
+            <param name="origin"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HueShiftSpriteFactory.CreateSprites(System.Drawing.Bitmap,FreeTrain.Framework.Graphics.Picture,System.Drawing.Point,System.Drawing.Point,System.Drawing.Size)">
+            <summary>
+            
+            </summary>
+            <param name="bit"></param>
+            <param name="picture"></param>
+            <param name="offset"></param>
+            <param name="origin"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl">
+            <summary>
+            ModalController that selects the half voxel region
+            and do something with it.
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.Unplaced">
+            <summary>Constant</summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.cursors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.Cursors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.anchor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.Anchor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.currentPos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.CurrentPos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.curSide">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.CurSide">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.site">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.Site">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.#ctor(FreeTrain.World.Structs.HalfVoxelStructure.HalfVoxelContribution,FreeTrain.Controllers.IControllerSite,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="contrib"></param>
+            <param name="site"></param>
+            <param name="remove"></param>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.currentSide">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.OnVoxelSelected(FreeTrain.World.Location,FreeTrain.World.Direction,FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide)">
+            <summary>
+            Called when the selection is completed.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.OnVoxelUpdated(FreeTrain.World.Location,FreeTrain.World.Direction,FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide)">
+            <summary>
+            Called when the selection is changed.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.onCanceled">
+            <summary>
+            Called when the user wants to cancel the modal controller.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.align(FreeTrain.World.Location)">
+            <summary>
+            Aligns the given location to the anchor so that
+            the location will become straight.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.getSide(System.Drawing.Point)">
+            <summary>
+            Get direction from anchor to which mouse coursor pointed.
+            Used as calcuration of front face direction.
+            </summary>
+            <param name="ab">Cursor position</param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.IsSelectable(FreeTrain.World.Location)">
+            <summary> LocationDisambiguator implementation </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.close">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.Name">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.Overlay">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.Disambiguator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.OnAttached">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.OnDetached">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.OnMouseMove(FreeTrain.Views.Map.MapViewWindow,FreeTrain.World.Location,System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="loc"></param>
+            <param name="ab"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.OnClick(FreeTrain.Views.Map.MapViewWindow,FreeTrain.World.Location,System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="source"></param>
+            <param name="loc"></param>
+            <param name="ab"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.OnRightClick(FreeTrain.Views.Map.MapViewWindow,FreeTrain.World.Location,System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="source"></param>
+            <param name="loc"></param>
+            <param name="ab"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.DrawBefore(FreeTrain.Views.QuarterViewDrawer,FreeTrain.World.DrawContext)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="surface"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.DrawVoxel(FreeTrain.Views.QuarterViewDrawer,FreeTrain.World.DrawContext,FreeTrain.World.Location,System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="canvas"></param>
+            <param name="loc"></param>
+            <param name="pt"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.DrawAfter(FreeTrain.Views.QuarterViewDrawer,FreeTrain.World.DrawContext)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="surface"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVControllerImpl.UpdatePreview">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure">
+            <summary>
+            The half divided voxel structure.
+            Consist of Back part and Fore part.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.#ctor(FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference,FreeTrain.World.Location)">
+            <summary>
+            The sprite to draw.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.add(FreeTrain.World.Structs.HalfVoxelStructure.ContributionReference)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.remove(FreeTrain.World.Structs.HalfVoxelStructure.PlaceSide)">
+            <summary>
+            
+            </summary>
+            <param name="side"></param>
+            <returns></returns>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.fore">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.back">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.stationListener">
+            <summary>
+            Station to which this structure sends population to.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.QueryInterface(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="aspect"></param>
+            <returns></returns>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.baseLocation">
+            <summary>
+            north-west bottom corner of this structure.
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.BaseLocation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.heightCutColor">
+            <summary>
+            Obtains the color that will be used to draw when in the height-cut mode.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.DistanceTo(FreeTrain.World.Location)">
+            <summary>
+            Gets the distance to this location from the base location of this structure.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.onClick">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.onEntityRemoved">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.remove">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.isSilentlyReclaimable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.isOwned">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.EntityValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.subsidiary">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.structurePrice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.totalLandPrice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Structs.HalfVoxelStructure.HVStructure.locationClue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.World.Structs.HalfVoxelStructure.MenuContributionImpl">
+            <summary>
+            Adds "half voxel" menu to the main window
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.MenuContributionImpl.#ctor(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.World.Structs.HalfVoxelStructure.MenuContributionImpl.MergeMenu(System.Windows.Forms.MainMenu)">
+            <summary>
+            
+            
+            </summary>
+            <param name="containerMenu"></param>
+        </member>
+    </members>
+</doc>

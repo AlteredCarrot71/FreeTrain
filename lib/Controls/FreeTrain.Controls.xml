@@ -1,0 +1,818 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeTrain.Controls</name>
+    </assembly>
+    <members>
+        <member name="T:FreeTrain.Controls.ColorPickButton">
+            <summary>
+            the button pick color by opening ColorPicker
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPickButton.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.ColorPickButton.lib">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.ColorPickButton.colorLibraries">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPickButton.OnCreateControl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.ColorPickButton.selected">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.ColorPickButton.SelectedColor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.ColorPickButton.pickerForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.ColorPickButton.picker">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.ColorPickButton.Picker">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPickButton.OnClick(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:FreeTrain.Controls.ColorPicker">
+            <summary>
+            ColorPicker
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.ColorPicker.components">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.ColorPicker.palettes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.ColorPicker.separators">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPicker.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="palettesInRow"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPicker.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPicker.#ctor(FreeTrain.Controls.IColorLibrary,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+            <param name="palettesInRow"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPicker.#ctor(FreeTrain.Controls.IColorLibrary)">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPicker.#ctor(FreeTrain.Controls.IColorLibrary[])">
+            <summary>
+            
+            </summary>
+            <param name="listarray"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPicker.#ctor(FreeTrain.Controls.IColorLibrary[],System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="listarray"></param>
+            <param name="palettesInRow"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPicker.setColors(FreeTrain.Controls.IColorLibrary[])">
+            <summary>
+            
+            </summary>
+            <param name="libColors"></param>
+        </member>
+        <member name="F:FreeTrain.Controls.ColorPicker.paletteSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.ColorPicker.PaletteSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.ColorPicker.palettesInRow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.ColorPicker.PalettesInRow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.ColorPicker.selected">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.ColorPicker.SelectedColor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:FreeTrain.Controls.ColorPicker.OnColorSelected">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPicker.layoutPalettes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPicker.createButton(System.Drawing.Color)">
+            <summary>
+            
+            </summary>
+            <param name="c"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPicker.createSeparator(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="idx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPicker.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPicker.OnLoad(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.ColorPicker.InitializeComponent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.Controls.MruMenuInline">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.MruMenuInline.firstMenuItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.MruMenuInline.FirstMenuItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenuInline.#ctor(System.Windows.Forms.MenuItem,FreeTrain.Controls.MruMenu.ClickHandler)">
+            <summary>
+            MruMenuInline shows the MRU list inline (without a popup)
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenuInline.#ctor(System.Windows.Forms.MenuItem,FreeTrain.Controls.MruMenu.ClickHandler,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="_recentFileMenuItem"></param>
+            <param name="_clickedHandler"></param>
+            <param name="_maxEntries"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenuInline.#ctor(System.Windows.Forms.MenuItem,FreeTrain.Controls.MruMenu.ClickHandler,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="_recentFileMenuItem"></param>
+            <param name="_clickedHandler"></param>
+            <param name="_registryKeyName"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenuInline.#ctor(System.Windows.Forms.MenuItem,FreeTrain.Controls.MruMenu.ClickHandler,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="_recentFileMenuItem"></param>
+            <param name="_clickedHandler"></param>
+            <param name="_registryKeyName"></param>
+            <param name="_maxEntries"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenuInline.#ctor(System.Windows.Forms.MenuItem,FreeTrain.Controls.MruMenu.ClickHandler,System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="_recentFileMenuItem"></param>
+            <param name="_clickedHandler"></param>
+            <param name="_registryKeyName"></param>
+            <param name="loadFromRegistry"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenuInline.#ctor(System.Windows.Forms.MenuItem,FreeTrain.Controls.MruMenu.ClickHandler,System.String,System.Boolean,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="recentFileMenuItem"></param>
+            <param name="clickedHandler"></param>
+            <param name="registryKeyName"></param>
+            <param name="loadFromRegistry"></param>
+            <param name="maxEntries"></param>
+        </member>
+        <member name="P:FreeTrain.Controls.MruMenuInline.MenuItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.MruMenuInline.StartIndex">
+            <summary>
+            /
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.MruMenuInline.EndIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenuInline.Enable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenuInline.SetFirstFile(System.Windows.Forms.MenuItem)">
+            <summary>
+            
+            </summary>
+            <param name="menuItem"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenuInline.Disable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.Controls.IColorLibrary">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.IColorLibrary.size">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.IColorLibrary.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTrain.Controls.CostBox">
+            <summary>
+            Displays a price.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.CostBox.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.CostBox.label">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.CostBox.cost">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.CostBox.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.CostBox.InitializeComponent">
+            <summary>
+            デザイナ サポートに必要なメソッドです。このメソッドの内容を
+            コード エディタで変更しないでください。
+            </summary>
+        </member>
+        <member name="T:FreeTrain.Controls.FileDropEventHandler">
+            <summary> Delegate that received dropped files. </summary>
+        </member>
+        <member name="T:FreeTrain.Controls.FileDropHandler">
+            <summary>
+            Encapsulates DragNDrop logic for Windows Forms.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.FileDropHandler.#ctor(System.Windows.Forms.Control,FreeTrain.Controls.FileDropEventHandler)">
+            <summary>
+            
+            </summary>
+            <param name="parent"></param>
+            <param name="handler"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.FileDropHandler.onFileDropped(System.String)">
+            <summary>
+            Overridable. This method is called for each dropped file.
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="T:FreeTrain.Controls.IndexSelector">
+            <summary>
+            Allow the user to select an index
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.IndexSelector.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.IndexSelector.current">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.IndexSelector.count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.IndexSelector.dataSource">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.IndexSelector.currentItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:FreeTrain.Controls.IndexSelector.indexChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.IndexSelector.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.IndexSelector.InitializeComponent">
+            <summary>
+            デザイナ サポートに必要なメソッドです。このメソッドの内容を
+            コード エディタで変更しないでください。
+            </summary>
+        </member>
+        <member name="T:FreeTrain.Controls.MruMenu">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.MruMenu.recentFileMenuItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.MruMenu.RecentFileMenuItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.MruMenu.registryKeyName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.MruMenu.RegistryKeyName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.MruMenu.numEntries">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.MruMenu.maxEntries">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.MruMenu.maxShortenPathLength">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:FreeTrain.Controls.MruMenu.onClicked">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.#ctor">
+            <summary>
+            MruMenu handles a most recently used (MRU) file list.
+            
+            This class shows the MRU list in a popup menu. To display
+            the MRU list "inline" use MruMenuInline.
+            
+            The class will load the last set of files from the registry
+            on construction and store them when instructed by the main
+            program.
+            
+            Internally, this class uses zero-based numbering for the items.
+            The displayed numbers, however, will start with one.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.#ctor(System.Windows.Forms.MenuItem,FreeTrain.Controls.MruMenu.ClickHandler)">
+            <summary>
+            
+            </summary>
+            <param name="_recentFileMenuItem"></param>
+            <param name="_clickedHandler"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.#ctor(System.Windows.Forms.MenuItem,FreeTrain.Controls.MruMenu.ClickHandler,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="_recentFileMenuItem"></param>
+            <param name="_clickedHandler"></param>
+            <param name="_maxEntries"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.#ctor(System.Windows.Forms.MenuItem,FreeTrain.Controls.MruMenu.ClickHandler,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="_recentFileMenuItem"></param>
+            <param name="_clickedHandler"></param>
+            <param name="_registryKeyName"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.#ctor(System.Windows.Forms.MenuItem,FreeTrain.Controls.MruMenu.ClickHandler,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="_recentFileMenuItem"></param>
+            <param name="_clickedHandler"></param>
+            <param name="_registryKeyName"></param>
+            <param name="_maxEntries"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.#ctor(System.Windows.Forms.MenuItem,FreeTrain.Controls.MruMenu.ClickHandler,System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="_recentFileMenuItem"></param>
+            <param name="_clickedHandler"></param>
+            <param name="_registryKeyName"></param>
+            <param name="loadFromRegistry"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.#ctor(System.Windows.Forms.MenuItem,FreeTrain.Controls.MruMenu.ClickHandler,System.String,System.Boolean,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="_recentFileMenuItem"></param>
+            <param name="_clickedHandler"></param>
+            <param name="_registryKeyName"></param>
+            <param name="loadFromRegistry"></param>
+            <param name="_maxEntries"></param>
+        </member>
+        <member name="T:FreeTrain.Controls.MruMenu.ClickHandler">
+            <summary>
+            
+            </summary>
+            <param name="number"></param>
+            <param name="filename"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.OnClick(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:FreeTrain.Controls.MruMenu.MenuItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.MruMenu.StartIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.MruMenu.EndIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.MruMenu.NumEntries">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.MruMenu.MaxEntries">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.MruMenu.MaxShortenPathLength">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.Enable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.Disable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.SetFirstFile(System.Windows.Forms.MenuItem)">
+            <summary>
+            
+            </summary>
+            <param name="menuItem"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.SetFirstFile(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="number"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.FixupEntryname(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="number"></param>
+            <param name="entryname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.FixupPrefixes(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="startNumber"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.FindFilenameNumber(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.FindFilenameMenuIndex(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.GetMenuIndex(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.GetFileAt(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.GetFiles">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.GetFilesFullEntryString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.SetFiles(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="filenames"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.AddFiles(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="filenames"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.ShortenPathname(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="pathname"></param>
+            <param name="maxLength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.AddFile(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="filename"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.AddFile(System.IO.FileInfo)">
+            <summary>
+            
+            </summary>
+            <param name="file"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.AddFile(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="filename"></param>
+            <param name="entryname"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.RemoveFile(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="number"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.RemoveFile(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="filename"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.RemoveAll">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.LoadFromRegistry">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.SaveToRegistry">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.LoadFromFile(System.IO.FileInfo)">
+            <summary>
+            
+            </summary>
+            <param name="file"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.MruMenu.SaveToFile(System.IO.FileInfo)">
+            <summary>
+            
+            </summary>
+            <param name="file"></param>
+        </member>
+        <member name="T:FreeTrain.Controls.SubListSelector">
+            <summary>
+            Select an ordered sub list from another list.
+            
+            Set the availables property of this control to populate the candidates.
+            This control allows the user to build a sub list of these candidates
+            in arbitrary order.
+            
+            The constructed sub list can be accessible through the selected property.
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Controls.SubListSelector._availables">
+            <summary> Source item list. </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.SubListSelector.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.SubListSelector.availables">
+            <summary>
+            Set or get the list of selectable items.
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.SubListSelector.selected">
+            <summary>
+            The sub list created by the user.
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.SubListSelector.title1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.SubListSelector.title2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.SubListSelector.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:FreeTrain.Controls.SubListSelector.InitializeComponent">
+            <summary>
+            デザイナ サポートに必要なメソッドです。このメソッドの内容を
+            コード エディタで変更しないでください。
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.SubListSelector.updateButtons">
+            <summary>
+            Update enable states of buttons 
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.SubListSelector.OnResize(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:FreeTrain.Controls.TrackBarEx">
+            <summary>
+            TrackBar class with a bug fix to the mouse wheel support.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.TrackBarEx.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.TrackBarEx.OnMouseWheel(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:FreeTrain.Controls.UrlLinkLabel">
+            <summary>
+            LinkLabel control that launchs a browser and
+            navigates to a specified URL.
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Controls.UrlLinkLabel.TargetUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.UrlLinkLabel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Controls.UrlLinkLabel.OnLinkClicked(System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeTrain.World.Road.DummyCars</name>
+    </assembly>
+    <members>
+        <member name="T:FreeTrain.World.Road.DummyCars.ControllerForm">
+            <summary>
+            Controller that allows the user to
+            place/remove cars.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.ControllerForm.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.ControllerForm.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="P:FreeTrain.World.Road.DummyCars.ControllerForm.IsPlacing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.ControllerForm.UpdateAfterResize(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.ControllerForm.OnColorChanged(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.ControllerForm.UpdatePreview(FreeTrain.World.Road.DummyCars.DummyCarContribution)">
+            <summary>
+            Called when a selection of the structure has changed.
+            </summary>
+        </member>
+        <member name="T:FreeTrain.World.Road.DummyCars.ControllerImpl">
+            <summary>
+            ModalController implementation for DummyCar contribution
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Road.DummyCars.ControllerImpl.contribution">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Road.DummyCars.ControllerImpl.color">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Road.DummyCars.ControllerImpl.remove">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.ControllerImpl.#ctor(FreeTrain.World.Road.DummyCars.DummyCarContribution,FreeTrain.Controllers.IControllerSite,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="contrib"></param>
+            <param name="site"></param>
+            <param name="remover"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.ControllerImpl.OnLocationSelected(FreeTrain.World.Location)">
+            <summary>
+            
+            </summary>
+            <param name="loc"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.ControllerImpl.DrawVoxel(FreeTrain.Views.QuarterViewDrawer,FreeTrain.World.DrawContext,FreeTrain.World.Location,System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="canvas"></param>
+            <param name="loc"></param>
+            <param name="pt"></param>
+        </member>
+        <member name="P:FreeTrain.World.Road.DummyCars.ControllerImpl.Disambiguator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.World.Road.DummyCars.RoadDisambiguator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Road.DummyCars.RoadDisambiguator.theInstance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.RoadDisambiguator.IsSelectable(FreeTrain.World.Location)">
+            <summary>
+            
+            </summary>
+            <param name="loc"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTrain.World.Road.DummyCars.DummyCar">
+            <summary>
+            Accessory implementation.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.DummyCar.#ctor(FreeTrain.World.TrafficVoxel,FreeTrain.World.Road.DummyCars.DummyCarContribution,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="target"></param>
+            <param name="contrib"></param>
+            <param name="color"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.DummyCar.DrawBefore(FreeTrain.World.DrawContext,System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="display"></param>
+            <param name="pt"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.DummyCar.DrawAfter(FreeTrain.World.DrawContext,System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="display"></param>
+            <param name="pt"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.DummyCar.OnRemoved">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.World.Road.DummyCars.DummyCarContribution">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.DummyCarContribution.#ctor(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="F:FreeTrain.World.Road.DummyCars.DummyCarContribution.sprites">
+            <summary>
+            Sprites. Dimensinos are [x,y] where
+            
+            x is an index of variations.
+            
+            y=0 if a pole is for E/W direction.
+            y=1 if a pole is for N/S direction
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Road.DummyCars.DummyCarContribution.colorVariations">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Road.DummyCars.DummyCarContribution.currentColor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.DummyCarContribution.GetSprites">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.DummyCarContribution.CreatePreview(System.Drawing.Size)">
+            <summary>
+            
+            </summary>
+            <param name="pixelSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.DummyCarContribution.CreateBuilder(FreeTrain.Controllers.IControllerSite)">
+            <summary>
+            
+            </summary>
+            <param name="site"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.DummyCarContribution.CreateRemover(FreeTrain.Controllers.IControllerSite)">
+            <summary>
+            
+            </summary>
+            <param name="site"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.DummyCarContribution.CanBeBuilt(FreeTrain.World.Location)">
+            <summary>
+            
+            </summary>
+            <param name="loc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.DummyCarContribution.Create(FreeTrain.World.Location)">
+            <summary>
+            Create a new car at the specified location.
+            dir = 0 or 1
+            </summary>
+            <param name="loc"></param>
+        </member>
+        <member name="T:FreeTrain.World.Road.DummyCars.MenuContributionImpl">
+            <summary>
+            Adds "automobile" menu to the main window
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.MenuContributionImpl.#ctor(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.DummyCars.MenuContributionImpl.MergeMenu(System.Windows.Forms.MainMenu)">
+            <summary>
+            
+            </summary>
+            <param name="containerMenu"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeTrain.World.Road.Accessory</name>
+    </assembly>
+    <members>
+        <member name="T:FreeTrain.World.Road.Accessory.ControllerForm">
+            <summary>
+            Controller that allows the user to
+            place/remove road accessories.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.ControllerForm.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.ControllerForm.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="P:FreeTrain.World.Road.Accessory.ControllerForm.IsPlacing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.ControllerForm.UpdateAfterResize(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.ControllerForm.OnTypeChanged(System.Object,System.EventArgs)">
+            <summary>
+            Called when a selection of the structure has changed.
+            </summary>
+        </member>
+        <member name="T:FreeTrain.World.Road.Accessory.ControllerImpl">
+            <summary>
+            ModalController implementation for road accessory contribution
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Road.Accessory.ControllerImpl.contribution">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Road.Accessory.ControllerImpl.Contribution">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Road.Accessory.ControllerImpl.remove">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.World.Road.Accessory.ControllerImpl.Remove">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.ControllerImpl.#ctor(FreeTrain.World.Road.Accessory.RoadAccessoryContribution,FreeTrain.Controllers.IControllerSite,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="contrib"></param>
+            <param name="site"></param>
+            <param name="remover"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.ControllerImpl.OnLocationSelected(FreeTrain.World.Location)">
+            <summary>
+            
+            </summary>
+            <param name="loc"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.ControllerImpl.DrawVoxel(FreeTrain.Views.QuarterViewDrawer,FreeTrain.World.DrawContext,FreeTrain.World.Location,System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="canvas"></param>
+            <param name="loc"></param>
+            <param name="pt"></param>
+        </member>
+        <member name="P:FreeTrain.World.Road.Accessory.ControllerImpl.Disambiguator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.World.Road.Accessory.RoadDisambiguator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.World.Road.Accessory.RoadDisambiguator.theInstance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.RoadDisambiguator.IsSelectable(FreeTrain.World.Location)">
+            <summary>
+            
+            </summary>
+            <param name="loc"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTrain.World.Road.Accessory.MenuContributionImpl">
+            <summary>
+            Adds "accessory" menu to the main window
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.MenuContributionImpl.#ctor(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.MenuContributionImpl.MergeMenu(System.Windows.Forms.MainMenu)">
+            <summary>
+            
+            </summary>
+            <param name="containerMenu"></param>
+        </member>
+        <member name="T:FreeTrain.World.Road.Accessory.RoadAccessory">
+            <summary>
+            Accessory implementation.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.RoadAccessory.#ctor(FreeTrain.World.TrafficVoxel,FreeTrain.World.Road.Accessory.RoadAccessoryContribution,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="target"></param>
+            <param name="contrib"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.RoadAccessory.DrawBefore(FreeTrain.World.DrawContext,System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="display"></param>
+            <param name="pt"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.RoadAccessory.DrawAfter(FreeTrain.World.DrawContext,System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="display"></param>
+            <param name="pt"></param>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.RoadAccessory.OnRemoved">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.World.Road.Accessory.RoadAccessoryContribution">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.RoadAccessoryContribution.#ctor(System.Xml.XmlElement)">
+            
+        </member>
+        <member name="F:FreeTrain.World.Road.Accessory.RoadAccessoryContribution.sprites">
+            <summary>
+            Sprites. Dimensinos are [x,y] where
+            
+            x=0 if a sprite is for E/W direction.
+            x=1 if a sprite is for N/S direction
+            
+            y=0 if a sprite is behind a train and
+            y=1 if a sprite is in front of a train 
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.RoadAccessoryContribution.CreatePreview(System.Drawing.Size)">
+            <summary>
+            
+            </summary>
+            <param name="pixelSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.RoadAccessoryContribution.CreateBuilder(FreeTrain.Controllers.IControllerSite)">
+            <summary>
+            
+            </summary>
+            <param name="site"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.RoadAccessoryContribution.CreateRemover(FreeTrain.Controllers.IControllerSite)">
+            <summary>
+            
+            </summary>
+            <param name="site"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.RoadAccessoryContribution.CanBeBuilt(FreeTrain.World.Location)">
+            <summary>
+            
+            </summary>
+            <param name="loc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.World.Road.Accessory.RoadAccessoryContribution.Create(FreeTrain.World.Location)">
+            <summary>
+            Create a new road accessory at the specified location.
+            </summary>
+            <param name="loc"></param>
+        </member>
+    </members>
+</doc>

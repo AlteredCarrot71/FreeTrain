@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeTrain.World.Rail.ColorTestTrain</name>
+    </assembly>
+    <members>
+        <member name="T:FreeTrain.World.Rail.ColorTestTrain.ColorConfigCommand">
+            <summary>
+            Menu item contribution that allows an user to
+            open a color config dialog.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Rail.ColorTestTrain.ColorConfigCommand.#ctor(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.World.Rail.ColorTestTrain.ColorConfigCommand.MergeMenu(System.Windows.Forms.MainMenu)">
+            <summary>
+            
+            </summary>
+            <param name="containerMenu"></param>
+        </member>
+        <member name="T:FreeTrain.World.Rail.ColorTestTrain.ColorConfigDialog">
+            <summary>
+            ColorConfigDialog
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Rail.ColorTestTrain.ColorConfigDialog.#ctor(FreeTrain.World.Rail.ColorTestTrain.ColorTestTrainCar)">
+            <summary>
+            
+            </summary>
+            <param name="car"></param>
+        </member>
+        <member name="M:FreeTrain.World.Rail.ColorTestTrain.ColorConfigDialog.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:FreeTrain.World.Rail.ColorTestTrain.ColorConfigDialog.InitializeComponent">
+            <summary>
+            デザイナ サポートに必要なメソッドです。このメソッドの内容を
+            コード エディタで変更しないでください。
+            </summary>
+        </member>
+        <member name="T:FreeTrain.World.Rail.ColorTestTrain.ColorTestTrainCar">
+            <summary>
+            TrainCar contribution implementation for ColorTestTrain.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.World.Rail.ColorTestTrain.ColorTestTrainCar.#ctor(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="F:FreeTrain.World.Rail.ColorTestTrain.ColorTestTrainCar.theInstance">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,689 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeTrain.Framework.Plugin.Generic</name>
+    </assembly>
+    <members>
+        <member name="T:FreeTrain.Framework.Plugin.Generic.NodeSelectedEvent">
+            <summary>
+            
+            </summary>
+            <param name="cat"></param>
+            <param name="option"></param>
+        </member>
+        <member name="T:FreeTrain.Framework.Plugin.Generic.CategoryTreeWnd">
+            <summary>
+            BankCounterForm
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.CategoryTreeWnd.components">
+            <summary>
+            必要なデザイナ変数です。
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.CategoryTreeWnd.OnNodeSelected">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.CategoryTreeWnd.ShowForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.CategoryTreeWnd.getSelectedCategory">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.CategoryTreeWnd.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.CategoryTreeWnd.Selected">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.CategoryTreeWnd.GetNode(FreeTrain.Framework.Plugin.Generic.StructCategory)">
+            <summary>
+            
+            </summary>
+            <param name="cat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.CategoryTreeWnd.GetNode(FreeTrain.Framework.Plugin.Generic.StructCategory,System.Windows.Forms.TreeNodeCollection)">
+            <summary>
+            
+            </summary>
+            <param name="cat"></param>
+            <param name="nodes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.CategoryTreeWnd.EraseIfBlank(System.Windows.Forms.TreeNode,System.Collections.ArrayList)">
+            <summary>
+            
+            </summary>
+            <param name="nd"></param>
+            <param name="arr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.CategoryTreeWnd.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.CategoryTreeWnd.InitializeComponent">
+            <summary>
+            デザイナ サポートに必要なメソッドです。このメソッドの内容を
+            コード エディタで変更しないでください。
+            </summary>
+        </member>
+        <member name="T:FreeTrain.Framework.Plugin.Generic.StructCategoryTree">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.StructCategoryTree.theInstance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.StructCategoryTree.baseDir">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.StructCategoryTree.BaseDir">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.StructCategoryTree.idTbl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.StructCategoryTree.nameTbl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.StructCategoryTree.loadDefaultTree">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.StructCategoryTree.#ctor(System.Xml.XmlDocument)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.StructCategoryTree.parseTree(System.Xml.XmlNode,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="nd"></param>
+            <param name="level"></param>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.StructCategoryTree.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="idnum"></param>
+            <returns></returns>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.StructCategoryTree.Item(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.StructCategoryTree.getParent(FreeTrain.Framework.Plugin.Generic.StructCategory)">
+            <summary>
+            
+            </summary>
+            <param name="cat"></param>
+            <returns></returns>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.StructCategoryTree.Categories">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.Framework.Plugin.Generic.StructCategories">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.StructCategories.array">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.StructCategories.#ctor(FreeTrain.Framework.Plugin.Generic.StructCategory)">
+            <summary>
+            
+            </summary>
+            <param name="cat"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.StructCategories.#ctor(System.Xml.XmlNode,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="node"></param>
+            <param name="idContrib"></param>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.StructCategories.Count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.StructCategories.Add(FreeTrain.Framework.Plugin.Generic.StructCategory)">
+            <summary>
+            
+            </summary>
+            <param name="cat"></param>
+            <returns></returns>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.StructCategories.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.StructCategories.Contains(FreeTrain.Framework.Plugin.Generic.StructCategory)">
+            <summary>
+            
+            </summary>
+            <param name="cat"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTrain.Framework.Plugin.Generic.GenericLandContribution">
+            <summary>
+            GenericLandContribution
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericLandContribution.#ctor(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericLandContribution.loadPrimitiveParams(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericLandContribution.CreatePrimitiveContrib(System.Xml.XmlElement,System.Xml.XmlNode,System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="sprite"></param>
+            <param name="color"></param>
+            <param name="contrib"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTrain.Framework.Plugin.Generic.SpriteTableType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.SpriteTableType.Unknown">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.SpriteTableType.Basic">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.SpriteTableType.VarHeight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution">
+            <summary>
+            Contribution of rail signal.
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.splitter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.Splitter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.categories">
+            <summary> sub type of this structure. </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.Categories">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.design">
+            <summary> sub type of this structure. </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.Design">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.unitPrice">
+            <summary> unit price of this structure. equals to whole price for fixed height. </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.UnitPrice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.Size">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.minHeight">
+            <summary> valid for variable height structure only. </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.MinHeight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.maxHeight">
+            <summary> used as well as fixed height structure. </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.MaxHeight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.stType">
+            <summary> sprite table type of this structure. </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.PatternType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.dirTable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.DirTable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution._colorMax">
+            <summary> counts of color variations. </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.ColorMax">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.ColorVariations">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution._dirMax">
+            <summary> 
+            counts of direction variations. 
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.DirMax">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.DirectionVariations">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution._colorIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.ColorIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution._dirIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.DirIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.Current">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.#ctor(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.GetGroup(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.loadPrimitiveParams(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.loadSprites(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.CreatePrimitiveContrib(System.Xml.XmlElement,System.Xml.XmlNode,System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="sprite"></param>
+            <param name="color"></param>
+            <param name="contrib"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.parseDirection(System.Xml.XmlNode,System.Int32)">
+            <summary>
+            parse direction information
+            </summary>
+            <param name="node">parent node contains 'direction' tags</param>
+            <param name="refindex">first index of contribs array</param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.GetPrimitiveContrib(FreeTrain.World.Direction,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="dir"></param>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.CreatePreview(System.Drawing.Size)">
+            <summary>
+            Creates a preview
+            </summary>
+            <param name="pixelSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.CreateBuilder(FreeTrain.Controllers.IControllerSite)">
+            <summary>
+            
+            </summary>
+            <param name="site"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.GenericStructureContribution.CreateRemover(FreeTrain.Controllers.IControllerSite)">
+            <summary>
+            
+            </summary>
+            <param name="site"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTrain.Framework.Plugin.Generic.MenuContributionImpl">
+            <summary>
+            Adds "signal" menu to the main window
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MenuContributionImpl.#ctor(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MenuContributionImpl.MergeMenu(System.Windows.Forms.MainMenu)">
+            <summary>
+            
+            </summary>
+            <param name="containerMenu"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MenuContributionImpl.ShowControllerForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FreeTrain.Framework.Plugin.Generic.MultiSelectorController">
+            <summary>
+            MultiSelectorController
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.Unplaced">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.create">
+            <summary>
+            Creates a new controller window, or active the existing one.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.OnClosing(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.Disambiguator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.IsSelectable(FreeTrain.World.Location)">
+            <summary>
+            
+            </summary>
+            <param name="loc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.OnMouseMove(FreeTrain.Views.Map.MapViewWindow,FreeTrain.World.Location,System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="loc"></param>
+            <param name="ab"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.OnClick(FreeTrain.Views.Map.MapViewWindow,FreeTrain.World.Location,System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="loc"></param>
+            <param name="ab"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.CanBeBuilt(FreeTrain.World.Location)">
+            <summary>
+            Returns true iff this structure can be built at the specified location.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.updateAlphaSprites">
+            <summary>
+            Re-builds an alpha-blending preview.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.CreateAlphaSprites">
+            <summary>
+            Implemented by the derived class to provide a sprite set used
+            to draw a preview of this structure on MapView.
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.DrawBefore(FreeTrain.Views.QuarterViewDrawer,FreeTrain.World.DrawContext)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="surface"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.DrawVoxel(FreeTrain.Views.QuarterViewDrawer,FreeTrain.World.DrawContext,FreeTrain.World.Location,System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="canvas"></param>
+            <param name="loc"></param>
+            <param name="pt"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.DrawAfter(FreeTrain.Views.QuarterViewDrawer,FreeTrain.World.DrawContext)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="surface"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.redrawPreview">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.Dispose(System.Boolean)">
+            <summary>
+            使用されているリソースに後処理を実行します。
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.isPlacing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.InitializeComponent">
+            <summary>
+            デザイナ サポートに必要なメソッドです。このメソッドの内容を
+            コード エディタで変更しないでください。
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.updateAfterResize(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.SetCategoryEntries(FreeTrain.Framework.Plugin.Generic.StructCategory,System.Collections.Hashtable)">
+            <summary>
+            
+            </summary>
+            <param name="cat"></param>
+            <param name="worktable"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.SetAllCategories">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.updatePrice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.MultiSelectorController.getDetailText">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTrain.Framework.Plugin.Generic.StructCategory">
+            <summary>
+            StructCategory
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.StructCategory.idnum">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.StructCategory.iconIdx">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.StructCategory.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.StructCategory.images">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.StructCategory.files">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.StructCategory.icons">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FreeTrain.Framework.Plugin.Generic.StructCategory.Subcategories">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.StructCategory.#ctor(System.Xml.XmlNode)">
+            <summary>
+            
+            </summary>
+            <param name="xn"></param>
+        </member>
+        <member name="M:FreeTrain.Framework.Plugin.Generic.StructCategory.HasParent">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.StructCategory.Parent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FreeTrain.Framework.Plugin.Generic.StructCategory.Root">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
