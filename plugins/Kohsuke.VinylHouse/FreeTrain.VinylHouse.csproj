@@ -106,7 +106,9 @@
     <Compile Include="VinylHouseVoxel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="plugin.xml" />
+    <Content Include="plugin.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
