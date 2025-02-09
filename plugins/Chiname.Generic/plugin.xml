@@ -24,8 +24,6 @@
 
 ]>
 <plug-in>
-	<depend on="Kohsuke.Structure"/>
-
   <title>Generic Plugin</title>
   <!--<title>汎用プラグイン</title> -->
 	<author>C477</author>
@@ -57,11 +55,11 @@
 	<!--	<class name="FreeTrain.Framework.Plugin.generic.CategoryTreeWnd" codebase="bin/Debug/FreeTrain.ContribEx.dll" />-->
 	<!--</contribution>-->
 	
-	<contribution type="picture" id = "{2C3ED0DA-FBA1-4586-9999-67DC93B851C9}">
-		<picture src = "dummy.bmp"/>
+	<contribution type="picture" id="{2C3ED0DA-FBA1-4586-9999-67DC93B851C9}">
+		<picture src="dummy.bmp"/>
 	</contribution>
 	<contribution type="GenericStructure" id="null-contrib">
-		<name></name>
+		<name/>
 		<structure>
 			<category byid="ffffffff"/>
 		</structure>

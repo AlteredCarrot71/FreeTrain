@@ -92,7 +92,7 @@ namespace FreeTrain.Framework.Plugin
         {
             // TODO: improve performance by having a dictionary from name to Assemblies.
             // TODO: what is the correct way to use an application specific logic to resolve assemblies
-            Trace.WriteLine("onAssemblyResolve resolving " + args.Name);
+            Debug.WriteLine("OnAssemblyResolve resolving " + args.Name);
 
             string name = GetModuleName(args.Name);
 
@@ -112,7 +112,7 @@ namespace FreeTrain.Framework.Plugin
                 }
             }
 
-            Trace.WriteLine("OnAssemblyResolve failed");
+            Debug.WriteLine("OnAssemblyResolve failed");
             return null;
         }
 
@@ -143,6 +143,7 @@ namespace FreeTrain.Framework.Plugin
             // locate plugins
             foreach (string dir in dirs)
             {
+                Debug.WriteLine("Searching for plugins ... found: " + Path.GetFileName(dir));
                 progressHandler("Searching for plugins...\n" + Path.GetFileName(dir), ++count / c_max);
                 //! progressHandler("プラグインを検索中\n"+Path.GetFileName(dir),++count/c_max);
 
@@ -154,6 +155,7 @@ namespace FreeTrain.Framework.Plugin
                 try
                 {
                     p = new PluginDefinition(dir);
+                    Debug.WriteLine("Loading contribution factories from plugin.xml ...");
                     p.loadContributionFactories();
                 }
                 catch (Exception e)
@@ -204,8 +206,8 @@ namespace FreeTrain.Framework.Plugin
                 PluginDefinition p = null;
                 while (!pluginSet.IsEmpty)
                 {
+                    Debug.WriteLine("Sorting dependencies...");
                     progressHandler("Sorting dependencies...", ++count / c_max);
-                    //! progressHandler("依存関係を整理中",++count/c_max);
                     p = (PluginDefinition)pluginSet.GetOne();
                     try
                     {
@@ -255,25 +257,9 @@ namespace FreeTrain.Framework.Plugin
             //	 load all the contributions			
             foreach (PluginDefinition p in plugins)
             {
-                progressHandler("Loading contributions...\n" + Path.GetFileName(p.dirName), ++count / c_max);
-                //! progressHandler("コントリビューションをロード中\n"+Path.GetFileName(p.dirName),++count/c_max);
-                try
-                {
-                    p.loadContributions();
-                }
-                catch (Exception e)
-                {
-                    errCount++;
-                    errBreak = errorHandler.OnPluginLoadError(p, e);
-                    if (!errorPlugins.ContainsKey(p))
-                    {
-                        errorPlugins.Add(p, e);
-                    }
-                    if (errBreak)
-                    {
-                        break;
-                    }
-                }
+                Debug.WriteLine("Loading contributions ...");
+                progressHandler("Loading contributions ...\n" + Path.GetFileName(p.dirName), ++count / c_max);
+                p.loadContributions();
             }
             if (errBreak)
                 Environment.Exit(-3);
@@ -283,26 +269,9 @@ namespace FreeTrain.Framework.Plugin
             c_max += PublicContributions.Length;
             foreach (Contribution contrib in PublicContributions)
             {
+                Debug.WriteLine("Initializing contribution " + contrib.Id + " ...");
                 progressHandler("Initializing contributions...\n" + contrib.BaseUri, ++count / c_max);
-                //! progressHandler("コントリビューションを初期化中\n"+contrib.baseUri,++count/c_max);
-                try
-                {
-                    contrib.OnInitComplete();
-                }
-                catch (Exception e)
-                {
-                    errCount++;
-                    errBreak = errorHandler.OnContributionInitError(contrib, e);
-                    PluginDefinition p = contrib.Parent;
-                    if (!errorPlugins.ContainsKey(p))
-                    {
-                        errorPlugins.Add(p, e);
-                    }
-                    if (errBreak)
-                    {
-                        break;
-                    }
-                }
+                contrib.OnInitComplete();
             }
             if (errBreak)
             {
@@ -310,8 +279,8 @@ namespace FreeTrain.Framework.Plugin
             }
 
             {// make sure there's no duplicate id
+                Debug.WriteLine("Checking for duplicate IDs...");
                 progressHandler("Checking for duplicate IDs...", 1.0f);
-                //! progressHandler("重複IDのチェック中",1.0f);
                 IDictionary dic = new Hashtable();
                 foreach (Contribution contrib in PublicContributions)
                 {
@@ -391,11 +360,13 @@ namespace FreeTrain.Framework.Plugin
         {
             if (contributionFactories.Contains(name))
             {
-                throw new Exception(string.Format(
-                    "contribution type \"{0}\" is already registered.", name));
+                Debug.WriteLine("contribution type " + name + " is already registered.");
             }
-
-            contributionFactories.Add(name, factory);
+            else
+            {
+                contributionFactories.Add(name, factory);
+                Debug.WriteLine("contribution type " + name + " is registered.");
+            }
         }
 
         /// <summary>

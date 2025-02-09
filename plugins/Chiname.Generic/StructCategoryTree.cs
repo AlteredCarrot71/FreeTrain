@@ -25,6 +25,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
 using System.Xml;
+using System.Diagnostics;
 
 namespace FreeTrain.Framework.Plugin.Generic
 {
@@ -61,15 +62,15 @@ namespace FreeTrain.Framework.Plugin.Generic
         /// </summary>
         static public void loadDefaultTree()
         {
+            Debug.WriteLine("Building category tree ...");
             PluginDefinition p = PluginManager.GetPlugin("Chiname.Generic");
             baseDir = p.dirName;
             string filename = Path.Combine(p.dirName, "CategoryTree.xml");
-            using (Stream file = p.loadStream(filename))
-            {
-                XmlDocument doc = new XmlDocument();
-                doc.Load(file);
-                new StructCategoryTree(doc);
-            }
+            Debug.WriteLine("Loading " + filename + " ...");
+            XmlDocument doc = new XmlDocument();
+            doc.Load(filename);
+            Debug.WriteLine(filename + " loaded.");
+            new StructCategoryTree(doc);
         }
 
         /// <summary>

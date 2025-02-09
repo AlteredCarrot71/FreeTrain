@@ -177,17 +177,9 @@ namespace FreeTrain.Framework.Plugin
         private static XmlDocument loadManifest(string dirName)
         {
             string path = Path.Combine(dirName, "plugin.xml");
-            using (FileStream file = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
-            {
-                XmlDocument doc = new XmlDocument();
-                XmlReaderSettings settings = new XmlReaderSettings();
-                settings.XmlResolver = null;
-                settings.ValidationType = ValidationType.None;
-                settings.ProhibitDtd = false;
-                XmlReader reader = XmlReader.Create(new XmlTextReader(path, file), settings);
-                doc.Load(reader);
-                return doc;
-            }
+            XmlDocument doc = new XmlDocument();
+            doc.Load(path);
+            return doc;
         }
 
         /// <summary>
@@ -235,7 +227,7 @@ namespace FreeTrain.Framework.Plugin
         /// </summary>
         internal protected virtual void loadContributions()
         {
-            Debug.WriteLine("loading contributions from " + name);
+            Debug.WriteLine("Loading contributions from " + name);
             XmlElement root = doc.DocumentElement;
 
             Uri baseUri = new Uri(root.BaseURI);
@@ -243,24 +235,22 @@ namespace FreeTrain.Framework.Plugin
             // load contributions
             foreach (XmlElement contrib in root.SelectNodes("contribution"))
             {
-                try
+                string type = contrib.Attributes["type"].Value; 
+                if (type != "contribution")
                 {
-                    string type = contrib.Attributes["type"].Value;
-                    if (type == "contribution") continue;	// ignore
-
                     IContributionFactory factory = PluginManager.GetContributionFactory(type);
+                    Debug.WriteLine(type + " factory created.");
                     Contribution c = factory.Load(this, contrib);
+                    Debug.WriteLine(c.Id + " loaded.");
                     contributions.Add(c);
+                    Debug.WriteLine(c.Id + " added to contributions list.");
                     PluginManager.AddContribution(c);
+                    Debug.WriteLine(c.Id + " added to Plugin Manager.");
                     c.init(this, baseUri);
-                }
-                catch (Exception e)
-                {
-                    throw new Exception("failed to load contribution " + contrib.Attributes["id"].Value, e);
+                    Debug.WriteLine(c.Id + " initialization finished.");
                 }
             }
         }
-
 
         /// <summary>
         /// Loads a stream from the plug-in directory.

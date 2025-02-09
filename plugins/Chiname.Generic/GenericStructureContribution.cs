@@ -337,6 +337,7 @@ namespace FreeTrain.Framework.Plugin.Generic
                 _group = new StructureGroup("GenericStructure");
             return _group;
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -355,35 +356,38 @@ namespace FreeTrain.Framework.Plugin.Generic
                 categories.Add(StructCategory.Root);
             }
 
-            try
+            // if design is not defined, use default.
+            if ( e.SelectSingleNode("design") == null )
             {
-                design = XmlUtil.SelectSingleNode(e, "design").InnerText;
-            }
-            catch
-            {
-                //! _design = "標準";
                 design = "default";
+            }
+            else
+            {
+                design = e.SelectSingleNode("design").InnerText;
             }
 
             unitPrice = int.Parse(XmlUtil.SelectSingleNode(e, "price").InnerText);
             size = XmlUtil.ParseSize(XmlUtil.SelectSingleNode(e, "size").InnerText);
             PricePerArea = unitPrice / Math.Max(1, size.Width * size.Height);
 
-            minHeight = 2;
-            try
+            // if minHeight is not defined, use default.
+            if (e.SelectSingleNode("minHeight") == null )
             {
-                maxHeight = int.Parse(XmlUtil.SelectSingleNode(e, "maxHeight").InnerText);
-                try
-                {
-                    // if minHeight is not defined, use default.
-                    minHeight = int.Parse(XmlUtil.SelectSingleNode(e, "minHeight").InnerText);
-                }
-                catch { }
+                minHeight = 2;
             }
-            catch
+            else
             {
-                // if maxHeight tag is nod find, height tag must be exist.
-                maxHeight = int.Parse(XmlUtil.SelectSingleNode(e, "height").InnerText);
+                minHeight = int.Parse(e.SelectSingleNode("minHeight").InnerText);
+            }
+
+            // if maxHeight tag is nod find, height tag must be exist.
+            if (e.SelectSingleNode("maxHeight") == null )
+            {
+                maxHeight = int.Parse(e.SelectSingleNode("height").InnerText);
+            }
+            else
+            {
+                maxHeight = int.Parse(e.SelectSingleNode("maxHeight").InnerText);
             }
         }
         /// <summary>

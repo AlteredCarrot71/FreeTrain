@@ -70,11 +70,10 @@
 
 <plug-in>	
 	<title>Structure Set</title>
-	<homepage>http://www.rocket.ne.jp/~nao/</homepage>
-	<author>C477</author>
-	<depend on="Kohsuke.Structure.OsakaCastle"/>	
-	
-	<contribution type="picture" id="{5E1F4ECE-06AF-4D23-BF80-E9FC47E4B167}">
+  <author>C477</author>
+  <homepage>http://www.rocket.ne.jp/~nao/</homepage>
+
+  <contribution type="picture" id="{5E1F4ECE-06AF-4D23-BF80-E9FC47E4B167}">
 		<picture src="store_s01.bmp" >
 			<override when="night" src="store_s01_n.bmp" />
 		</picture>
@@ -197,12 +196,11 @@
 			<picture ref="{B99FA2F7-F138-46a1-99F7-34AE23A157F6}"/>
 		</sprite>
 	</contribution>
-	
-	
+
 	<contribution type="picture" id="{2E8E24AC-4242-4801-A4DD-2947A0800794}">
 		<picture src="bldgVH01.bmp"/>
 	</contribution>
-	
+
 	<contribution type="GenericStructure" id="{442C7E12-A3BA-4c25-9129-C3803EA760BC}">
 		<group>Office building (A)</group>
 		<structure>
@@ -217,51 +215,50 @@
 		&crLtBlue;
 		&crSilver;
 		<pictures>			
-			<top    origin=" 0,  0" offset="24">
+			<top origin="0,0" offset="24">
 				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
 			</top>
-			<middle origin=" 0, 48" offset="24">
+			<middle origin="0,48" offset="24">
 				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
 			</middle>
-			<bottom origin=" 0, 96" offset="24">
+			<bottom origin="0,96" offset="24">
 				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
 			</bottom>
 		</pictures>
 		<pictures opposite="true">
-			<top    origin="80,  0" offset="16">
+			<top origin="80,0" offset="16">
 				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
 			</top>
-			<middle origin="80, 48" offset="16">
+			<middle origin="80,48" offset="16">
 				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
 			</middle>
-			<bottom origin="80, 96" offset="16">
+			<bottom origin="80,96" offset="16">
 				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
 			</bottom>
 		</pictures>
 		<pictures>
-			<top    origin="160,  0" offset="24">
+			<top origin="160,0" offset="24">
 				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
 			</top>
-			<middle origin="160, 48" offset="24">
+			<middle origin="160,48" offset="24">
 				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
 			</middle>
-			<bottom origin="160, 96" offset="24">
+			<bottom origin="160,96" offset="24">
 				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
 			</bottom>
 		</pictures>
 		<pictures opposite="true">
-			<top    origin="240,  0" offset="16">
+			<top origin="240,0" offset="16">
 				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
 			</top>
-			<middle origin="240, 48" offset="16">
+			<middle origin="240,48" offset="16">
 				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
 			</middle>
-			<bottom origin="240, 96" offset="16">
+			<bottom origin="240,96" offset="16">
 				<picture ref="{2E8E24AC-4242-4801-A4DD-2947A0800794}"/>
 			</bottom>
 		</pictures>
 	</contribution>
-	
 	
 	<contribution type="picture" id="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}">
 		<picture src="bldgVH02.bmp"/>
@@ -280,29 +277,28 @@
 		<maxHeight>10</maxHeight>
 		&officeBuildingWithHeliportPopulation;
 		<pictures>
-			<top    origin="  0,  0" offset="24">
+			<top origin="0,0" offset="24">
 				<picture ref="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}"/>
 			</top>
-			<middle origin="  0, 48" offset="24">
+			<middle origin="0,48" offset="24">
 				<picture ref="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}"/>
 			</middle>
-			<bottom origin="  0, 96" offset="24">
+			<bottom origin="0,96" offset="24">
 				<picture ref="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}"/>
 			</bottom>
 		</pictures>
 		<pictures opposite="true">
-			<top    origin=" 80,  0" offset="16">
+			<top origin="80,0" offset="16">
 				<picture ref="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}"/>
 			</top>
-			<middle origin=" 80, 48" offset="16">
+			<middle origin="80,48" offset="16">
 				<picture ref="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}"/>
 			</middle>
-			<bottom origin=" 80, 96" offset="16">
+			<bottom origin="80,96" offset="16">
 				<picture ref="{16D97ECA-5387-4D2C-B51D-E54663B21B2B}"/>
 			</bottom>
 		</pictures>
 	</contribution>
-	
 	
 	<contribution type="picture" id="{98D10236-1A52-455B-8D86-7FD3B9B26994}">
 		<picture src="bldgVH03.bmp">
